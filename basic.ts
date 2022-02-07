@@ -53,7 +53,20 @@ function Iall(value: any) {
 
 // Generic
 
-function manyHobbies(arry: any[], value: any) {
+function manyHobbies(array: any[], value: any) {
   const newArry = [value, ...array];
   return newArry;
 }
+
+const demoarry = [1, 2, 3];
+
+const newMany = manyHobbies(demoarry, 1);
+
+function manys<T>(arry: T[], value: T) {
+  const newArry = [value, ...arry];
+  return newArry;
+}
+
+const demoarrys = [1, 2, 3];
+
+const newManys = manys(demoarry, 1);
