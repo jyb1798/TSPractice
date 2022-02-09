@@ -62,7 +62,7 @@ const demoarry = [1, 2, 3];
 
 const newMany = manyHobbies(demoarry, 1);
 
-function manys<T>(arry: T[], value: T) {
+function manys(arry: number[], value: number) {
   const newArry = [value, ...arry];
   return newArry;
 }
@@ -70,3 +70,5 @@ function manys<T>(arry: T[], value: T) {
 const demoarrys = [1, 2, 3];
 
 const newManys = manys(demoarry, 1);
+
+const someArray = insertAtTheBeginning<string>(["a", "aa", "c"], "d");
